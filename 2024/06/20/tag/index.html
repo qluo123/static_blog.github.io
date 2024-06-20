@@ -7,10 +7,10 @@
 
     
 
-    <title>归档: 2024/6 | 秦洛の自学小屋</title>
+    <title>tag | 秦洛の自学小屋</title>
     <meta name="author" content="秦洛" />
     <meta name="keywords" content="qluo123 秦洛" />
-    <meta name="description" content="qluo&#39;秦洛" />
+    <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -68,7 +68,7 @@
                 <span class="nav-text">标签</span>
             </a>
         
-            <a class="nav-item active" href="/static_blog.github.io/archives">
+            <a class="nav-item" href="/static_blog.github.io/archives">
                 <span class="nav-text">归档</span>
             </a>
         
@@ -88,6 +88,8 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="https://github.com/qluo123/static_blog.github.io"></form>
 
+        
+        
         
         
 
@@ -130,71 +132,65 @@
 
         <div id="content" class="content">
             <div id="wrapper" class="wrapper" style="max-width: 800px">
-                
-
-
+                <article class="article" itemscope itemprop="blogPost">
     
-    
-    
-    
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/static_blog.github.io/archives/2024/06" class="page-hd">
-        2024/06
-    </a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
+    <header class="article-header">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/static_blog.github.io/2024/06/20/tag/">tag</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/static_blog.github.io/archives/2024/06">
-    
-    <time class="vm" datetime="2024-06-20T05:54:38.000Z" itemprop="datePublished">6/20</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
+        <h1 itemprop="name">
+            tag
+        </h1>
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/static_blog.github.io/2024/06/17/hello-world/">Hello World</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/static_blog.github.io/archives/2024/06">
+        <div class="article-meta clearfix">
+            <a class="article-date" href="https://github.com/qluo123/static_blog.github.io/2024/06/20/tag/index.html">
     
-    <time class="vm" datetime="2024-06-17T12:50:33.284Z" itemprop="datePublished">6/17</time>
+    <i class="icon-calendar vm"></i>
+    
+    <time class="vm" datetime="2024-06-20T05:54:38.000Z" itemprop="datePublished">2024-06-20</time>
 </a>
-)
-            </span>
-        </header>
-    </div>
+
+            
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        
+        
+    </section>
 </article>
-    </li>
 
 
-</ol></section>
 
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7fbe80427f54741e289f",
+        clientSecret: "f34ed5fd92e54c9000bd37ba951948cb939deff5",
+        repo: "sanonz.github.io",
+        owner: "sanonz",
+        admin: ["sanonz"],
+        id: "71370774f403618d6f305631fafd22e7",
+        distractionFreeMode: true,
+        title: "tag",
+        body: "https://github.com/qluo123/static_blog.github.io/2024/06/20/tag/",
+        labels: []
+    }).render('comments');
+    </script>
+</div>
 
 
 
             </div>
         </div>
 
+        
+            
+            <a id="pagenext" href="/static_blog.github.io/2024/06/17/hello-world/" class="article-next" title="Hello World"><i class="icon-arrow-right"></i></a>
+            
+            
         
 
         <footer class="footer">
@@ -268,6 +264,33 @@
         });
     });
     </script>
+    
+        
+<script src="/static_blog.github.io/js/scrollspy.min.js"></script>
+
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script>
     
 
 </body>
