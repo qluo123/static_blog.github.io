@@ -7,10 +7,10 @@
 
     
 
-    <title>成功建站 | Hexo</title>
+    <title>Tag: 学习 | Hexo</title>
     <meta name="author" content="秦洛" />
     <meta name="keywords" content="" />
-    <meta name="description" content="经过将近三天的努力下，终于成功在GitHub pages下部署了自己的hexo博客" />
+    <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -64,7 +64,7 @@
                 <span class="nav-text">学习</span>
             </a>
         
-            <a class="nav-item" href="/static_blog.github.io/tags">
+            <a class="nav-item active" href="/static_blog.github.io/tags">
                 <span class="nav-text">标签</span>
             </a>
         
@@ -88,8 +88,6 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="https://github.com/qluo123/static_blog.github.io"></form>
 
-        
-        
         
         
 
@@ -132,73 +130,58 @@
 
         <div id="content" class="content">
             <div id="wrapper" class="wrapper" style="max-width: 800px">
-                <article class="article" itemscope itemprop="blogPost">
+                
+
+
+<div class="page-hd">
+    学习
+    <small>(1)</small>
+</div>
+
+
+
     
-    <header class="article-header">
+    
+    
+    
+    
+    <section class="archives-wrap">
+    <div class="archive-year-wrap">
+    <a href="/static_blog.github.io/archives/2024" class="page-hd">
+        2024
+    </a>
+    </div>
+    <ol class="archives">
+    
+
+    <li class="archive-section-item">
         
-        <h1 itemprop="name">
-            成功建站
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="https://github.com/qluo123/static_blog.github.io/2024/06/20/tag/index.html">
+<article class="archive-article archive-type-post">
+    <div class="archive-article-inner">
+        <header class="archive-article-header">
+            <a class="archive-article-link" href="/static_blog.github.io/2024/06/28/2024-06-28-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">2024.06.28 学习记录</a>
+            <span class="archive-article-date">
+                (<a class="article-date" href="/static_blog.github.io/archives/2024/06">
     
-    <i class="icon-calendar vm"></i>
-    
-    <time class="vm" datetime="2024-06-20T05:54:38.000Z" itemprop="datePublished">2024-06-20</time>
+    <time class="vm" datetime="2024-06-28T08:13:19.000Z" itemprop="datePublished">6/28</time>
 </a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag vm"></i>
-    <a class="article-tag-link" href="/static_blog.github.io/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>经过将近三天的努力下，终于成功在GitHub pages下部署了自己的hexo博客</p>
-<span id="more"></span>
-        
-    </section>
+)
+            </span>
+        </header>
+    </div>
 </article>
+    </li>
 
 
+</ol></section>
 
-<div class="comments">
-    <div id="comments"></div>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-    new Gitalk({
-        clientID: "Ov23lif2o8jkN51szUAu",
-        clientSecret: "8ad4798ca7a4ba73f3eb446da302cf3922244a4c",
-        repo: "static_blog.github.io",
-        owner: "qluo123",
-        admin: ["qluo123"],
-        id: "71370774f403618d6f305631fafd22e7",
-        distractionFreeMode: true,
-        title: "成功建站",
-        body: "https://github.com/qluo123/static_blog.github.io/2024/06/20/tag/",
-        labels: ["技术"]
-    }).render('comments');
-    </script>
-</div>
+
 
 
 
             </div>
         </div>
 
-        
-            
-            <a id="pagenext" href="/static_blog.github.io/2024/06/17/hello-world/" class="article-next" title="Hello World"><i class="icon-arrow-right"></i></a>
-            
-            
-            <a id="pageprev" href="/static_blog.github.io/2024/06/28/2024-06-28-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="article-prev" title="2024.06.28 学习记录"><i class="icon-arrow-left"></i></a>
-            
         
 
         <footer class="footer">
@@ -272,33 +255,6 @@
         });
     });
     </script>
-    
-        
-<script src="/static_blog.github.io/js/scrollspy.min.js"></script>
-
-        <script type="text/javascript">
-        $(document.body).scrollspy({target: '#aside-inner'});
-
-        $(window).on('resize', function() {
-            var hw = $('#header').width();
-            var ww = $('#wrapper').width();
-            var space = ($(this).width() - hw - ww) / 2 / 2;
-
-            var pageprev = $('#pageprev');
-            var pagenext = $('#pagenext');
-            var avg = (pageprev.width() + pagenext.width()) / 2
-
-            if(space > avg) {
-                var len = space - avg / 2;
-                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
-                pageprev.css($.extend({left: hw + len}, styles));
-                pagenext.css($.extend({right: len}, styles));
-            } else {
-                pageprev.removeAttr('style');
-                pagenext.removeAttr('style');
-            }
-        }).trigger('resize');
-        </script>
     
 
 </body>
